@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: SudokuElementTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.042 s <<< FAILURE! - in SudokuElementTest
+SudokuElementTest.testSudokuElementEqualsMethodSameObjectExpectedTrue  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuElementTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBox (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuElementTest.testSudokuElementEqualsMethodSameObjectExpectedTrue(SudokuElementTest.java:24)
+
+SudokuElementTest.testSudokuElementHashCodeExpectedEqual  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuElementTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBox (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuElementTest.testSudokuElementHashCodeExpectedEqual(SudokuElementTest.java:44)
+
+SudokuElementTest.testSudokuElementEqualsMethodDifferentObjectsExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuElementTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBox (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuElementTest.testSudokuElementEqualsMethodDifferentObjectsExpectedFalse(SudokuElementTest.java:30)
+
+SudokuElementTest.testSudokuElementEqualsMethodNullValueExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuElementTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBox (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuElementTest.testSudokuElementEqualsMethodNullValueExpectedFalse(SudokuElementTest.java:18)
+
+SudokuElementTest.testSudokuElementEqualsMethodDifferentClassExpectedFalse  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuElementTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBox (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuElementTest.testSudokuElementEqualsMethodDifferentClassExpectedFalse(SudokuElementTest.java:37)
+
+SudokuElementTest.testSudokuElementToStringExpectedEqual  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuElementTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBox (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuElementTest.testSudokuElementToStringExpectedEqual(SudokuElementTest.java:50)
+
+SudokuElementTest.testSudokuElementVerifyMethod  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuElementTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuElementTest.testSudokuElementVerifyMethod(SudokuElementTest.java:56)
+

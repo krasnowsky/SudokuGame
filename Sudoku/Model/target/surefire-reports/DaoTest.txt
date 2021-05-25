@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: DaoTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.132 s <<< FAILURE! - in DaoTest
+DaoTest.testReadWriteCloseMethods  Time elapsed: 0.079 s  <<< ERROR!
+java.lang.IllegalAccessError: class DaoTest (in unnamed module @0x29ca901e) cannot access class sdk.FileSudokuBoardDao (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at DaoTest.testReadWriteCloseMethods(DaoTest.java:20)
+
+DaoTest.testSudokuBoardDaoFactory  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalAccessError: class DaoTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoardDaoFactory (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at DaoTest.testSudokuBoardDaoFactory(DaoTest.java:29)
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BacktrackingSudokuSolver.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Model</a> &gt; <a href="index.source.html" class="el_package">sdk.solver</a> &gt; <span class="el_source">BacktrackingSudokuSolver.java</span></div><h1>BacktrackingSudokuSolver.java</h1><pre class="source lang-java linenums">package sdk.solver;
+
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import sdk.board.SudokuBoard;
+
+<span class="fc" id="L9">public class BacktrackingSudokuSolver implements SudokuSolver, Serializable {</span>
+
+    //constants
+    private static final int EMPTY = 0;
+    private static final int SIZE = 9;
+
+
+    //actual solving sudoku algorithm
+    @Override
+    public boolean solve(SudokuBoard board) {
+        int row;
+<span class="fc" id="L20">        int column = 0;</span>
+<span class="fc" id="L21">        boolean isEmpty = false;</span>
+<span class="fc" id="L22">        Integer[] intArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};</span>
+<span class="fc" id="L23">        List&lt;Integer&gt; listRow = Arrays.asList(intArray);</span>
+<span class="fc" id="L24">        Collections.shuffle(listRow);</span>
+
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        for (row = 1; row &lt; SIZE; row++) {</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">            for (column = 0; column &lt; SIZE; column++) {</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">                if (board.getCellValue(row * SIZE + column) == EMPTY) {</span>
+<span class="fc" id="L29">                    isEmpty = true;</span>
+<span class="fc" id="L30">                    break;</span>
+                }
+            }
+<span class="fc bfc" id="L33" title="All 2 branches covered.">            if (isEmpty) {</span>
+<span class="fc" id="L34">                break;</span>
+            }
+        }
+
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        if (!isEmpty) {</span>
+<span class="fc" id="L39">            return true;</span>
+        }
+
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        for (int o = 0;o &lt; 9;o++) {</span>
+<span class="fc" id="L43">            int number = intArray[o];</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">            if (board.isInRow(number, row)</span>
+<span class="fc bfc" id="L45" title="All 2 branches covered.">                    &amp;&amp; board.isInColumn(number, column)</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">                    &amp;&amp; board.isInSquare(number, row, column)) {</span>
+<span class="fc" id="L47">                board.setCellValue(row * 9 + column, number);</span>
+
+<span class="fc bfc" id="L49" title="All 2 branches covered.">                if (solve(board)) {</span>
+<span class="fc" id="L50">                    return true;</span>
+                }
+<span class="fc" id="L52">                board.setCellValue(row * 9 + column, 0);</span>
+            }
+        }
+<span class="fc" id="L55">        return false;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

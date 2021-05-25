@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SudokuElement.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Model</a> &gt; <a href="index.source.html" class="el_package">sdk.components</a> &gt; <span class="el_source">SudokuElement.java</span></div><h1>SudokuElement.java</h1><pre class="source lang-java linenums">package sdk.components;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import sdk.observer.Observer;
+
+public abstract class SudokuElement implements Observer, Cloneable {
+    protected List&lt;SudokuField&gt; sudokuFields;
+
+<span class="fc" id="L15">    public SudokuElement() {</span>
+<span class="fc" id="L16">        sudokuFields = Arrays.asList(new SudokuField[9]);</span>
+<span class="fc" id="L17">    }</span>
+
+    public boolean verify() {
+<span class="fc" id="L20">        Set&lt;Integer&gt; foundNumbers = new HashSet&lt;&gt;();</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="fc" id="L22">            int potentialValue = sudokuFields.get(i).getFieldValue();</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">            if (foundNumbers.contains(potentialValue)) {</span>
+<span class="fc" id="L24">                return false;</span>
+            }
+<span class="fc" id="L26">            foundNumbers.add(potentialValue);</span>
+        }
+<span class="fc" id="L28">        return true;</span>
+    }
+
+    @Override
+    public void update(boolean verify) {
+        /*if (verify) {
+            System.out.println(&quot;Success&quot;);
+        } else {
+            System.out.println(&quot;Fail&quot;);
+        }*/
+<span class="fc" id="L38">    }</span>
+
+    //method for getting hashcode
+    @Override
+    public int hashCode() {
+<span class="fc" id="L43">        return HashCodeBuilder.reflectionHashCode(this);</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L48">        return &quot;SudokuElement{&quot;</span>
+                +
+                &quot;sudokuFields=&quot;
+                +
+                sudokuFields
+                +
+                '}';
+    }
+
+    //method for comparing two objects
+    @Override
+    public boolean equals(Object o) {
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        if (this == o) {</span>
+<span class="fc" id="L61">            return true;</span>
+        }
+
+<span class="fc bfc" id="L64" title="All 4 branches covered.">        if (o == null || getClass() != o.getClass()) {</span>
+<span class="fc" id="L65">            return false;</span>
+        }
+
+<span class="fc" id="L68">        SudokuElement that = (SudokuElement) o;</span>
+
+<span class="fc" id="L70">        return new EqualsBuilder().append(sudokuFields, that.sudokuFields).isEquals();</span>
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+<span class="nc" id="L75">        return super.clone();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

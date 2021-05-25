@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: SudokuBoardPrototypeTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.01 s <<< FAILURE! - in SudokuBoardPrototypeTest
+SudokuBoardPrototypeTest.testCloningPrototypeClass  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardPrototypeTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardPrototypeTest.testCloningPrototypeClass(SudokuBoardPrototypeTest.java:15)
+

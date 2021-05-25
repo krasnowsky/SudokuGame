@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: SudokuFieldTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! - in SudokuFieldTest
+SudokuFieldTest.testSudokuFieldSetterAndGetter  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuFieldTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuField (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuFieldTest.testSudokuFieldSetterAndGetter(SudokuFieldTest.java:12)
+
+SudokuFieldTest.testEqualsMethodExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuFieldTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuField (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuFieldTest.testEqualsMethodExpectedFalse(SudokuFieldTest.java:47)
+
+SudokuFieldTest.testEqualsMethodDifferentClassExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuFieldTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuField (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuFieldTest.testEqualsMethodDifferentClassExpectedFalse(SudokuFieldTest.java:57)
+
+SudokuFieldTest.testHashCodeMethod  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuFieldTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuField (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuFieldTest.testHashCodeMethod(SudokuFieldTest.java:26)
+
+SudokuFieldTest.testEqualsMethodNullValue  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuFieldTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuField (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuFieldTest.testEqualsMethodNullValue(SudokuFieldTest.java:40)
+
+SudokuFieldTest.testEqualsMethodExpectedTrue  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuFieldTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuField (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuFieldTest.testEqualsMethodExpectedTrue(SudokuFieldTest.java:33)
+
+SudokuFieldTest.testToStringMethod  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuFieldTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuField (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuFieldTest.testToStringMethod(SudokuFieldTest.java:19)
+

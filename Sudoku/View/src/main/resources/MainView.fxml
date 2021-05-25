@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.StageController">
+   <children>
+      <ToggleButton fx:id="easyBtn" layoutX="632.0" layoutY="428.0" mnemonicParsing="false" onAction="#setDifficultyButton" pickOnBounds="false" prefHeight="65.0" prefWidth="147.0" styleClass="btn" stylesheets="@CustomShapes.css" text="%diffButton1" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="diffGroup" />
+         </toggleGroup>
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font></ToggleButton>
+      <ToggleButton fx:id="mediumBtn" layoutX="558.0" layoutY="335.0" mnemonicParsing="false" onAction="#setDifficultyButton" prefHeight="65.0" prefWidth="147.0" styleClass="btn" stylesheets="@CustomShapes.css" text="%diffButton2" textFill="WHITE" toggleGroup="$diffGroup">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font></ToggleButton>
+      <ToggleButton fx:id="hardBtn" layoutX="630.0" layoutY="239.0" mnemonicParsing="false" onAction="#setDifficultyButton" prefHeight="65.0" prefWidth="147.0" styleClass="btn" stylesheets="@CustomShapes.css" text="%diffButton3" textFill="WHITE" toggleGroup="$diffGroup">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font></ToggleButton>
+      <Button layoutX="26.0" layoutY="239.0" mnemonicParsing="false" onAction="#handleBtn1" prefHeight="78.0" prefWidth="181.0" styleClass="btn" stylesheets="@CustomShapes.css" text="%startButton" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font></Button>
+      <Button alignment="TOP_RIGHT" layoutX="89.0" layoutY="335.0" mnemonicParsing="false" onAction="#loadingGame" prefHeight="78.0" prefWidth="147.0" styleClass="btn" stylesheets="@CustomShapes.css" text="%loadButton" textFill="WHITE">
+         <padding>
+            <Insets right="10.0" top="15.0" />
+         </padding>
+         <font>
+            <Font name="Agency FB" size="30.0" />
+         </font></Button>
+      <MenuBar layoutY="-1.0" prefHeight="28.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="%languageChoice">
+            <items>
+                  <RadioMenuItem fx:id="englishItem" mnemonicParsing="false" onAction="#setLanguage" text="English">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="languageGroup" />
+                     </toggleGroup></RadioMenuItem>
+                  <RadioMenuItem fx:id="polskiItem" mnemonicParsing="false" onAction="#setLanguage" text="Polski" toggleGroup="$languageGroup" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="%otherLabel">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showAboutLabel" text="%aboutMenu" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="aboutLabel" alignment="CENTER" layoutX="12.0" layoutY="493.0" onMouseClicked="#closeAboutLabel" prefHeight="99.0" prefWidth="777.0" style="-fx-background-color: white;" visible="false" wrapText="true">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="43.0" prefHeight="137.0" prefWidth="558.0" text="Sudoku The Game" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="96.0" />
+         </font>
+      </Label>
+       <Label fx:id="notFoundLabel" alignment="CENTER" layoutX="151.0" layoutY="201.0" onMouseClicked="#closeNotFoundLabel" prefHeight="206.0" prefWidth="441.0" style="-fx-background-color: white;" text="%notFoundLabel" visible="false">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font></Label>
+   </children>
+</Pane>

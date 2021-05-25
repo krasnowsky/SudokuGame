@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: SudokuBoardTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 15, Skipped: 0, Time elapsed: 0.076 s <<< FAILURE! - in SudokuBoardTest
+SudokuBoardTest.testTwoConsecutiveBoardsAlignment  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testTwoConsecutiveBoardsAlignment(SudokuBoardTest.java:33)
+
+SudokuBoardTest.testBoardDigitsAlignment  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testBoardDigitsAlignment(SudokuBoardTest.java:17)
+
+SudokuBoardTest.testCorrectnessOfVerifyMethodSudokuBoard  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testCorrectnessOfVerifyMethodSudokuBoard(SudokuBoardTest.java:116)
+
+SudokuBoardTest.testSudokuBoardEqualsMethodNullValueExpectedFalse  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testSudokuBoardEqualsMethodNullValueExpectedFalse(SudokuBoardTest.java:141)
+
+SudokuBoardTest.testEqualsMethodDifferentClassExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testEqualsMethodDifferentClassExpectedFalse(SudokuBoardTest.java:92)
+
+SudokuBoardTest.testHashCodeMethod  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testHashCodeMethod(SudokuBoardTest.java:74)
+
+SudokuBoardTest.testIfRandomizeHintsGiveExactNumberOfHints  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testIfRandomizeHintsGiveExactNumberOfHints(SudokuBoardTest.java:99)
+
+SudokuBoardTest.testSudokuBoardEqualsMethodDifferentObjectsExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testSudokuBoardEqualsMethodDifferentObjectsExpectedFalse(SudokuBoardTest.java:153)
+
+SudokuBoardTest.testEqualsMethodNullValueExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testEqualsMethodNullValueExpectedFalse(SudokuBoardTest.java:86)
+
+SudokuBoardTest.testSudokuBoardCheckboardMethodCase3ExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testSudokuBoardCheckboardMethodCase3ExpectedFalse(SudokuBoardTest.java:132)
+
+SudokuBoardTest.testSudokuBoardEqualsMethodDifferentClassExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testSudokuBoardEqualsMethodDifferentClassExpectedFalse(SudokuBoardTest.java:160)
+
+SudokuBoardTest.testSudokuBoardEqualsMethodSameObjectExpectedTrue  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testSudokuBoardEqualsMethodSameObjectExpectedTrue(SudokuBoardTest.java:147)
+
+SudokuBoardTest.testSudokuBoardCheckboardMethodCase1ExpectedFalse  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testSudokuBoardCheckboardMethodCase1ExpectedFalse(SudokuBoardTest.java:123)
+
+SudokuBoardTest.testEqualsMethodExpectedTrue  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testEqualsMethodExpectedTrue(SudokuBoardTest.java:80)
+
+SudokuBoardTest.testToStringMethod  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalAccessError: class SudokuBoardTest (in unnamed module @0x29ca901e) cannot access class sdk.SudokuBoard (in module Model) because module Model does not export sdk to unnamed module @0x29ca901e
+	at SudokuBoardTest.testToStringMethod(SudokuBoardTest.java:67)
+

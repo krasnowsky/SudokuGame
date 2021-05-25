@@ -1,0 +1,14 @@
+#Mon May 24 16:16:57 CEST 2021
+configuration*?=37BBE6F64371D05E60D08CCBA44EEED35B87ED83
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\board\\SudokuBoardDifficulty.java=1621865576177
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\components\\SudokuRow.java=1621864900528
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\dao\\SudokuBoardDaoFactory.java=1621865576094
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\observer\\Observable.java=1620154802526
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\observer\\Observer.java=1620154802526
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\solver\\SudokuSolver.java=1621865576196
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\board\\SudokuBoardLanguage.java=1621865576147
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\components\\SudokuBox.java=1621864962376
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\components\\SudokuColumn.java=1621864931999
+module-resource*?\:checkstyle-xpath-suppressions.xml=4BC5297C9084F703E554280216B3F0047ED7EB29
+module-resource*?\:checkstyle-suppressions.xml=815CB4F01FA867EC6B087B6AF0222CFC05D0EAEF
+C\:\\repos\\SudokuGameProject\\Model\\src\\main\\java\\sdk\\board\\SudokuBoardPrototype.java=1621865576156

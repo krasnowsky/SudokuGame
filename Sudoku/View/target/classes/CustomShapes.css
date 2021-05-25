@@ -1,0 +1,8 @@
+.btn{
+    -fx-background-color: black;
+    -fx-border-color: black;
+}
+
+.btn:focused{
+    -fx-text-fill: "#808080";
+}
